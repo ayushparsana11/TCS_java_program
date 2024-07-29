@@ -1,24 +1,39 @@
-package Day7_Hierarchi_inhe;
+package color;
 
-public class Employee extends Member {
-	private String spec;
-	private String dept;
+public class Employee {
+
+	private String ename;
+	private int sal;
 	
-	@Override
-	public String toString() {
-		return "Name : "+getName() +" | Age : "+getAge() +" | Phn : "+getPhn()+" | Add : "+getAdd()+" | spec=" + spec + " | dept=" + dept;
-	}
-	public String getSpec() {
-		return spec;
-	}
-	public void setSpec(String spec) {
-		this.spec = spec;
-	}
-	public String getDept() {
-		return dept;
-	}
-	public void setDept(String dept) {
-		this.dept = dept;
+	
+	public String getEname() {
+		return ename;
 	}
 	
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	
+	public int getSal() {
+		return sal;
+	}
+	
+	public void setSal(int sal) 
+	{
+		try
+		{
+			if(sal < 5000)
+			{
+				throw new SalaryException("Salary Must be Grater Than 5000");
+			}
+			else
+			{
+				this.sal = sal;
+			}
+		}
+		catch(SalaryException se)
+		{
+			System.out.println(se.getMessage());
+		}
+	}
 }
