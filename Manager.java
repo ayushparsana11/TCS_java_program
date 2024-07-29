@@ -1,6 +1,6 @@
 package Day7_Hierarchi_inhe;
 
-public class Employee extends Member {
+public class Manager extends Member{
 	private String spec;
 	private String dept;
 	
@@ -20,5 +20,4 @@ public class Employee extends Member {
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
-	
 }
