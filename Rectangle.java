@@ -1,38 +1,34 @@
-package Day6_inheritance;
+package Geometry;
 
 public class Rectangle {
 	private double length;
-	private double breath;
+	private double width;
+	
 	public double getLength() {
 		return length;
 	}
 	public void setLength(double length) {
 		this.length = length;
 	}
-	public double getBreath() {
-		return breath;
+	public double getWidth() {
+		return width;
 	}
-	public void setBreath(double breath) {
-		this.breath = breath;
+	public void setWidth(double width) {
+		this.width = width;
 	}
-	public Rectangle(double length, double breath) {
-		//super();
+	public Rectangle(double length, double width) {
+		super();
 		this.length = length;
-		this.breath = breath;
+		this.width = width;
 	}
-	Rectangle(){
-		
-	}
-	
-	public double areaCal(){
-		return length*breath;
-	}
+	public double calculateArea() {
+        return length * width;
+    }
 	@Override
 	public String toString() {
-		return "Rectangle [length=" + length + ", breath=" + breath + ", areaCal()=" + areaCal() + "]";
+		return "Rectangle [length=" + length + ", width=" + width + ", calculateArea()=" + calculateArea() + "]";
 	}
-	
-	
+
 	
 	
 }

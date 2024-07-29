@@ -1,20 +1,31 @@
-package Day6_inheritance;
+package tnsif.newpackage.countryInfo;
 
 public class Country {
-	private String cname;
-
-	public String getCname() {
-		return cname;
-	}
-
-	public void setCname(String cname) {
-		this.cname = cname;
+	private String name;
+	
+	public Country()
+	{
+		
 	}
 
 	@Override
 	public String toString() {
-		return "Country [cname=" + cname + "]";
+		return "Country [name=" + name + "]";
 	}
+
+	public Country(String name) {
+		super();
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	
 	
 }

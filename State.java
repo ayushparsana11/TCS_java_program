@@ -1,7 +1,13 @@
-package Day6_inheritance;
+package tnsif.newpackage.countryInfo;
 
-public class State extends Country{
+public class State {
 	private String sname;
+
+	
+	public State(String sname) {
+		super();
+		this.sname = sname;
+	}
 
 	public String getSname() {
 		return sname;
@@ -15,4 +21,6 @@ public class State extends Country{
 	public String toString() {
 		return "State [sname=" + sname + "]";
 	}
+	
+	
 }
